@@ -13,11 +13,13 @@
 	### Windows PC
     ```
 	npm install
+	npm run dev
 	```
 
 	### Linux / Mac PC
     ```
 	npm install
+	npm run dev
 	```
 
 2. Import database file in "db" folder.
