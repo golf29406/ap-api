@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:mysql@127.0.0.1:3306/ap_db?schema=public"
+}
+
+model Payments {
+  id        Int      @id @default(autoincrement())
+  numberPayment      String  @unique
+  address     String
+  zipcode     Int
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+}
